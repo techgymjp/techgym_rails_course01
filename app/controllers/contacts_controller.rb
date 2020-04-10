@@ -8,4 +8,8 @@ class ContactsController < ApplicationController
 
   def thanks
   end
+
+private
+  def contact_params
+  end
 end
