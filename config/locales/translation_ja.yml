@@ -1,0 +1,12 @@
+ja:
+  activerecord:
+    models:
+      contact: お問い合わせ  #g
+
+    attributes:
+      contact:
+        email: Eメール  #g
+        name: 氏名  #g
+        remark: 備考  #g
+        status: ステータス  #g
+        title: 件名  #g

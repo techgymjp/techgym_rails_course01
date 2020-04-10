@@ -1,0 +1,11 @@
+ja:
+  enums:
+    contact:
+      title:
+        service: サービスについて
+        relationship: 協業・パートナーシップについて
+        job: お仕事のご相談・ご依頼について
+        other: その他
+      status:
+        yet: 未対応
+        done: 対応済み
