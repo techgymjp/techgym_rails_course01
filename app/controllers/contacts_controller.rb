@@ -5,4 +5,7 @@ class ContactsController < ApplicationController
 
   def create
   end
+
+  def thanks
+  end
 end
