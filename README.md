@@ -1,3 +1,1 @@
-# README
-
-techgym_rails_course01
+# techgym_rails_course01
