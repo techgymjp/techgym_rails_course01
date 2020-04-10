@@ -7,6 +7,6 @@ ja:
       contact:
         email: Eメール  #g
         name: 氏名  #g
-        remark: 備考  #g
+        content: 内容  #g
         status: ステータス  #g
         title: 件名  #g
