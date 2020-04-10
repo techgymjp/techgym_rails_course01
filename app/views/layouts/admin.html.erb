@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>管理者画面</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <main class="d-flex justify-content-center pt-5">
+      <div class="col-8">
+        <%= yield %>
+      </div>
+    </main>
+  </body>
+</html>
