@@ -29,14 +29,7 @@ module ContactApp
       g.javascripts false
       g.stylesheets false
       g.helper false
-      g.test_framework :rspec,
-        fixtures: true,
-        view_specs: false,
-        helper_specs: false,
-        routing_specs: false,
-        controller_specs: true,
-        request_specs: false
-      g.fixture_replacement :factory_bot, dir: "spec/factories"
+      g.test_framework false
     end
 
     # Settings in config/environments/* take precedence over those specified here.
