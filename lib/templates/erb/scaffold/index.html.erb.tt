@@ -16,7 +16,12 @@
       <tr>
         <td><%%= <%= singular_name %>.id %></td>
 <% attributes.reject(&:password_digest?).each do |attribute| -%>
+
+<% if attribute.type == :enum -%>
+        <td><%%= <%= singular_name %>.<%= attribute.name %>_i18n %></td>
+<% else %>
         <td><%%= <%= singular_name %>.<%= attribute.name %> %></td>
+<% end %>
 <% end -%>
         <td>
           <%%= link_to '表示', [:<%= class_path[0] %>, <%= singular_name %>], class: "btn btn-secondary" %>
