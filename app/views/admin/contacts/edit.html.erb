@@ -1,0 +1,6 @@
+<h1><%= Contact.model_name.human %>編集</h1>
+
+<%= render 'form', contact: @contact %>
+
+<%= link_to '表示', [:admin, @contact], class: "btn btn-secondary" %>
+<%= link_to '戻る', admin_contacts_path, class: "btn btn-secondary" %>

@@ -1,0 +1,46 @@
+<%= form_with(model: [:admin, contact], local: true) do |f| %>
+  <% if contact.errors.any? %>
+    <div class="alert alert-danger alert-dismissible">
+      <h2><%= contact.errors.count %> つのエラーがあります。</h2>
+
+      <ul>
+      <% contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+    <div class="form-group">
+      <%= f.label :title %>
+      <%= f.select :title, Contact.titles_i18n.invert, {}, class: "form-control" %>
+    </div>
+
+
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+
+
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.text_field :email, class: "form-control" %>
+    </div>
+
+
+    <div class="form-group">
+      <%= f.label :content %>
+      <%= f.text_area :content, class: "form-control" %>
+    </div>
+
+
+    <div class="form-group">
+      <%= f.label :status %>
+      <%= f.select :status, Contact.statuses_i18n.invert, {}, class: "form-control" %>
+    </div>
+
+
+<%= f.submit "送信", class: "btn btn-success" %>
+<% end %>

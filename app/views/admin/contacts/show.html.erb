@@ -1,0 +1,38 @@
+<h1><%= Contact.model_name.human %>情報 表示</h1>
+
+
+<table class="table table-striped">
+  <tbody>
+   <tr>
+      <td><%= t Contact.human_attribute_name(:title) %></td>
+      <td><%= @contact.title_i18n %></td>
+
+    </tr>
+   <tr>
+      <td><%= t Contact.human_attribute_name(:name) %></td>
+
+      <td><%= @contact.name %></td>
+
+    </tr>
+   <tr>
+      <td><%= t Contact.human_attribute_name(:email) %></td>
+
+      <td><%= @contact.email %></td>
+
+    </tr>
+   <tr>
+      <td><%= t Contact.human_attribute_name(:content) %></td>
+
+      <td><%= @contact.content %></td>
+
+    </tr>
+   <tr>
+      <td><%= t Contact.human_attribute_name(:status) %></td>
+      <td><%= @contact.status_i18n %></td>
+
+    </tr>
+  </tbody>
+</table>
+
+<%= link_to '編集', edit_admin_contact_path(@contact), class: "btn btn-primary" %>
+<%= link_to '戻る', admin_contacts_path, class: "btn btn-secondary" %>
