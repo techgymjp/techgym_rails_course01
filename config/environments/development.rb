@@ -59,4 +59,7 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   config.web_console.whitelisted_ips = '0.0.0.0/0'
+
+  config.action_mailer.default_url_options = { host: 'myapp.c9users.io/', port: $PORT, protocol: 'https' }
+  config.action_mailer.delivery_method = :letter_opener_web
 end
