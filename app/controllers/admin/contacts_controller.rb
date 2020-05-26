@@ -38,6 +38,10 @@ class Admin::ContactsController < AdminController
     redirect_to admin_contacts_path, notice: "#{Contact.model_name.human}の削除に成功しました。"
   end
 
+  def change_status
+    render plain: params
+  end
+
   private
     def set_contact
       @contact = Contact.find(params[:id])
