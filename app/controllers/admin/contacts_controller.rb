@@ -1,5 +1,5 @@
 class Admin::ContactsController < AdminController
-  before_action :set_contact, only: [:show, :edit, :update, :destroy]
+  before_action :set_contact, only: [:show, :edit, :update, :destroy, :change_status]
 
   def index
     @contacts = Contact.all
@@ -39,7 +39,8 @@ class Admin::ContactsController < AdminController
   end
 
   def change_status
-    render plain: params
+    @contact.update(status: :done)
+    redirect_to admin_contacts_path, notice: "#{Contact.model_name.human}のステータス更新に成功しました。"
   end
 
   private
