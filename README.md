@@ -3,7 +3,7 @@
 ＜目標＞ランサーズやクラウドワークスなどで、資料請求フォームなどのお仕事ができる。
 
 
-＜まなぶこと＞
+＜学ぶこと＞
 
 ・環境構築（AWS Cloud9）
 
@@ -27,10 +27,14 @@
 テキスト 
 https://github.com/techgymjp/techgym_rails_course01/blob/master/RailsCourse01.pdf
 
+実行環境(Cloud9) https://ap-northeast-1.console.aws.amazon.com/cloud9
+
 動画(環境構築) 
+
 https://www.youtube.com/watch?v=50VFge6ntO4&list=PL9u04bPGBuUPVseIvQqOCeOydgczDrmhe&index=18
 
 動画(オープン講座) 
+
 https://www.youtube.com/watch?v=yH66nPLTW5U&list=PL9u04bPGBuUPVseIvQqOCeOydgczDrmhe&index=19
 
 オープン講座アンケート
